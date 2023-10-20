@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Web_Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Young+Serif&display=swap"
+    rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Merriweather:wght@700&family=Young+Serif&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@600&family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<style>
+    .skill-box-top{
+        margin-top: 30px;
+    }
+    .skill-box{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+    .skill-icons{
+        margin: 26px;
+ 
+    width: 87px;
+    height: 87px;
+    border-radius: 25px;
+    }
+    .skill-icons img{
+        
+        box-shadow: -2px -1px 5px 4px #656060;
+    border-radius: 25px;
+    width: 97px;
+    height: 97px;
+    
+    }
+    .bg-color {
+        width: 100%;
+        height: 479px;
+        position: absolute;
+        left: -50%;
+        right: -50%;
+        top: 68px;
+        bottom: 0;
+        animation: animate 10s ease-in-out infinite alternate;
+        background: linear-gradient(90deg, #000000 50%, #121212 -50%);
+        opacity: .5;
+        z-index: -1;
+
+
+    }
+
+    .layer-1 {
+        animation-direction: alternate-reverse;
+        animation-duration: 5s;
+    }
+
+    .layer-2 {
+
+        animation-duration: 7s;
+    }
+
+ 
+/*     .banner-text h2{
+        /* font-family: shrik; 
+        font-size: 55px;
+        letter-spacing: 5px;
+        color: #fff;
+        margin: 0;
+
+    }
+    .banner-text h3{
+    
+        font-size: 30px;
+     
+        color: #fff;
+        margin: 0;
+
+    } */
+    @keyframes animate {
+      0%{
+        transform: translateX(-50%);
+      }
+      100%{
+        transform: translateX(50%);
+      }
+    }
+  
+</style>
+<body class="dark-theme">
+    <header>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Nav Bar        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+                <div class="nav-box">
+            <div class="nav">
+                <div class="logo ">
+                    <a id="animated-text" href="#">Portfolio</a>
+                </div>
+                <ul class="nav_ul">
+                    <li class="nav_li"><a href="#home" id="">Home</a></li>
+                    <li class="nav_li"><a href="#skills" id="">Skills</a></li>
+                    <li class="nav_li"><a href="#projects" id="">Projects</a></li>
+                    <li class="nav_li"><a href="#certificates" id="">Certificates</a></li>
+                    <li class="nav_li"><a href="#feed-back" id="">feed Back</a></li>
+                    <li class="nav_li"><a href="#contact_us" id="">Contact Us</a></li>
+                    <li class="nav_li"><a href="#about_us" id="">About us</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" style="position: sticky; top:0%;"></i>
+                </div>
+                <div class="dropdown_menu">
+                    <li class="nav_li"><a href="#home" id="">Home</a></li>
+                    <li class="nav_li"><a href="#skills" id="">Skills</a></li>
+                    <li class="nav_li"><a href="#projects" id="">Projects</a></li>
+                    <li class="nav_li"><a href="#certificates" id="">Certificates</a></li>
+                    <li class="nav_li"><a href="#feed-back" id="">feed Back</a></li>
+                    <li class="nav_li"><a href="#contact_us" id="">Contact Us</a></li>
+                    <li class="nav_li"><a href="#about_us" id="">About us</a></li>
+                </div>
+                <div id="dark-button">
+                    <h3 style="font-size: 0.8rem;">Light</h3>
+                    <label class="switch">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <h3 style="font-size: 0.8rem;">Dark</h3>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+ <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     HOME        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+        <section id="home">
+            <div class="dark-theme bg-color"></div>
+            <div class="dark-theme bg-color layer-1"></div>
+            <div class="dark-theme bg-color layer-2"></div>
+     
+            <div id="title-box">
+                <h4 id="ss1">FRONT-END WEB</h4>
+                <h4 id="ss1">DEVELOPER</h4>
+                <h2 id="ss2">BALA JEE</h2>
+
+                <div id="short-intro">
+                    <p id="short-intro1" id="animated-text">Hey there</p>
+                    <p id="short-intro2"> I'm Bala Jee, a skilled</p>
+                    <p id="short-intro3"> front-end web developer</p>
+                    <p id="short-intro4"> hailing from Bihar, India.</p>
+                </div>
+            </div>
+            <aside id="social-media-icon"></aside>
+            <div>
+                <a href="https://twitter.com/Abhishe32976560?t=YL1BGAq3_Nj5uHnFUC4bDA&s=09" target="_blank"><img
+                        class="icons"
+                        src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-15-128.png"
+                        alt="twitter"></a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100022531668620" target="_blank"><img class="icons"
+                        src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-16-64.png"
+                        alt="facebook"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/abhishek-roy-71a2881b9/" target="_blank"><img class="icons"
+                        src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-11-128.png"
+                        alt="linkedin"></a>
+            </div>
+            <div>
+                <a href="https://github.com/abhishek808319" target="_blank"><img class="icons"
+                        src="https://cdn4.iconfinder.com/data/icons/bettericons/354/github-64.png" alt="github"></a>
+            </div>
+            <div>
+                <a href="https://instagram.com/abhishek_roy_7861" target="_blank"><img class="icons"
+                        src="https://cdn2.iconfinder.com/data/icons/social-media-hexagon-design/512/instagram-64.png"
+                        alt="instagram"></a>
+            </div>
+            <div>
+                <a href="https://discord.gg/NK5NVYsd" target="_blank"><img class="icons"
+                        src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-64.png"
+                        alt="discord"></a>
+                </aside>
+        </section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     About Me        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+        <section id="about_us">
+            <div id="about_us_box">
+                <h1>About Me</h1>
+                <div class="profile-container">
+                    <img id="profile-photo" src="profile.jpg" alt="Profile Photo" onclick="openProfile()">
+                </div>
+                <div class="profile-modal" id="profile-modal">
+                    <span class="close-button" onclick="closeProfile()">&times;</span>
+                    <img id="full-profile-photo" src="profile.jpg" alt="Full Profile Photo">
+                </div>
+                <p id="animated-text"> I am <strong>Bala Jee</strong>, a dedicated student residing in Gaya, Bihar. My
+                    academic journey is geared towards achieving a master's degree in computer science. Proficient in
+                    several programming languages, including C, C++, Java, and JavaScript, I specialize in Java. My
+                    passion lies in the realm of cybersecurity, where I aspire to make a mark. Explore my portfolio to
+                    discover my projects and skills in the field of technology and computer science.
+                </p>
+            </div>
+            </div>
+        </section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Skills       <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+        <section id="skills">
+            <h1>My Skills</h1>
+            <div class="skill-box skill-box-top ">
+                <div class="skill-icons"><img src="https://www.freeiconspng.com/thumbs/html5-icon/html5-icon-1.png" width="87px" height="87px" alt="HTML"></div>
+                <div class="skill-icons"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS"></div>
+                <div class="skill-icons"><img src="https://ih1.redbubble.net/image.815350031.4911/st,small,507x507-pad,600x600,f8f8f8.u1.jpg" alt=""></div>
+                <div class="skill-icons"><img src="https://www.kloia.com/hubfs/java-1.png" alt="JAVA"></div>
+              
+            </div>
+            <div class="skill-box">
+                <div class="skill-icons"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png" alt="C+"></div>
+                <div class="skill-icons"><img src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++"></div>
+                <div class="skill-icons"><img src="https://www.rlogical.com/wp-content/uploads/2023/03/icon-botsrap-1.webp" alt="bootstrap"></div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-icons"><img src="https://w7.pngwing.com/pngs/791/922/png-transparent-react-javascript-library-redux-user-interface-tesseract-logo-symmetry-nodejs.png" alt="react.js"></div>
+                <div class="skill-icons"><img src="https://e7.pngegg.com/pngimages/731/63/png-clipart-jquery%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E7%AF%84%E4%BE%8B%E6%95%99%E5%AD%B8-computer-icons-jquery-icon-web-design-text-thumbnail.png" alt="jquery"></div>
+
+            </div>
+        </section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Projects        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div>
+                
+            </div>
+        </section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Certificates        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+        <section id="certificates">
+            <h1>My Achievments In Programming Languages</h1>
+ 
+    <div class="progress-box">
+        <div class="progress-report">
+
+
+            <div >
+                <img id="progress-im1" src="certi.png" alt="progress-report" onclick="openProfile2()">
+            </div>
+            <div class="progress-model" id="progress-model">
+                <span class="close-button2" onclick="closeProfile2()">&times;</span>
+                <img id="full-progress-img1" src="certi.png" alt="Progress-report in full size">
+            </div>
+            
+
+        </div>
+        <div class="progress-report">
+
+
+                        <div >
+                <img id="progress-im1" src="certi2.png" alt="progress-report" onclick="openProfile3()">
+            </div>
+            <div class="progress-model" id="progress-mode2">
+                <span class="close-button2" onclick="closeProfile3()">&times;</span>
+                <img id="full-progress-img2" src="certi2.png" alt="Progress-report in full size">
+            </div>
+
+
+        </div>
+        <div class="progress-report">
+            
+
+            <div >
+                <img id="progress-im1" src="certi3.png" alt="progress-report" onclick="openProfile4()">
+            </div>
+            <div class="progress-model" id="progress-mode3">
+                <span class="close-button2" onclick="closeProfile4()">&times;</span>
+                <img id="full-progress-img3" src="certi3.png" alt="Progress-report in full size">
+            </div>
+
+
+        </div>
+        <div class="progress-report">
+
+
+                  <div >
+                <img id="progress-im1" src="certi4.png" alt="progress-report" onclick="openProfile5()">
+            </div>
+            <div class="progress-model" id="progress-mode4">
+                <span class="close-button2" onclick="closeProfile5()">&times;</span>
+                <img id="full-progress-img4" src="certi4.png" alt="Progress-report in full size">
+            </div>     
+
+
+        </div>
+
+    </div>
+
+    <div class="progress-box">
+        <div class="progress-report">
+
+
+                     <div >
+                <img id="progress-im1" src="certi.png" alt="progress-report" onclick="openProfile6()">
+            </div>
+            <div class="progress-model" id="progress-mode5">
+                <span class="close-button2" onclick="closeProfile6()">&times;</span>
+                <img id="full-progress-img5" src="certi.png" alt="Progress-report in full size">
+            </div>   
+
+
+        </div>
+        <div class="progress-report">
+            
+
+            <div >
+                <img id="progress-im1" src="certi2.png" alt="progress-report" onclick="openProfile7()">
+            </div>
+            <div class="progress-model" id="progress-mode6">
+                <span class="close-button2" onclick="closeProfile7()">&times;</span>
+                <img id="full-progress-img6" src="certi2.png" alt="Progress-report in full size">
+            </div>
+
+
+        </div>
+        <div class="progress-report">
+
+
+                      <div >
+                <img id="progress-im1" src="certi3.png" alt="progress-report" onclick="openProfile8()">
+            </div>
+            <div class="progress-model" id="progress-mode7">
+                <span class="close-button2" onclick="closeProfile8()">&times;</span>
+                <img id="full-progress-img7" src="certi3.png" alt="Progress-report in full size">
+            </div>  
+
+
+        </div>
+        <div class="progress-report">
+            
+
+            <div >
+                <img id="progress-im1" src="certi4.png" alt="progress-report" onclick="openProfile9()">
+            </div>
+            <div class="progress-model" id="progress-mode8">
+                <span class="close-button2" onclick="closeProfile9()">&times;</span>
+                <img id="full-progress-img8" src="certi4.png" alt="Progress-report in full size">
+            </div>
+
+
+        </div>
+    </div>
+            </section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    Feed BAck Form        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <section id="feed-back"> <h1>Feedback Form</h1>
+            <div class="form">
+                  <div>
+                    <form id="feedbackForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="Feed">Feedback:</label>
+                        <textarea id="back" name="Feed" rows="4" required></textarea><br><br>
+
+                        <input  type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Contact us Page        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <section id="contact_us">
+            <h1>Contact</h1>
+        </section>
+        <script src="index.js">
+        </script>
+    </header>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     Footer        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+    <footer style="text-align: center;">
+        copyright &copy; . All right reserved|since(2022)
+    </footer>
+</body>
+
+</html>
